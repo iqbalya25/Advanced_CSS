@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header CSS */
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #d1d0e1;
+    padding: 20px;
+    align-items: center;
+}
+
+.mainlogo{
+    flex: 1;
+}
+
+.mainmenu{
+    flex: 2;
+    align-items: center;
+}
+
+.mainmenu ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.mainmenu ul li{
+    margin: 0;
+    padding: 10px 50px 10px 50px;
+}
+
+.mainmenu ul li a{
+    text-decoration: none;
+    color: rgb(93, 93, 93);
+    font-size: 20px;
+    transition: font-size 0.2s ease;
+}
+
+.mainmenu ul li a:hover{
+    color: rgb(6, 6, 6);
+    font-size: 21px;
+}
+
+.searchbar img{
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+}
+
+.searchbar button{
+    padding: 5px 20px 5px 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+
+
+/* Hero CSS Start*/
+.hero{
+    display: flex;
+    background-color: #EDECFF;
+}
+
+.hero .texthero{
+    flex: 0 0 40%;
+    margin: 100px 20px 20px 70px;
+}
+
+.texthero h1{
+    margin: 0;
+ 
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texthero .phero{
+    margin: 0;
+    padding: 40px 00px 30px 0px;
+}
+
+.texthero button{
+    margin-top: 40px;
+    border: 0px;
+    padding: 0px 40px 0px 40px;
+    border-left: 5px solid;
+    background-color: #FDD9D3;
+}
+
+.texthero .textbutton{
+    margin: 0px;
+    padding: 10px 10px 10px 10px ;
+}
+
+.imageherocontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    align-items: start;
+}
+
+.imageherocontainer > div:nth-child(even){
+    padding-top: 50px;
+}
+
+.imageherocontainer > div:nth-child(odd){
+    padding-top: 10px;
+}
+
+.imagehero{
+    padding: 30px 10px 30px 10px;
+}
+
+.imghero1 img, 
+.imghero2 img,
+.imghero3 img{
+    transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+.imghero1 img:hover,
+.imghero2 img:hover,
+.imghero3 img:hover {
+    transform: scale(1.03); /* Increase size by 3% */
+}
+
+.heroicon{
+    text-align: center;
+}
+
+.heroicon img{
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+}
+
+/* Hero CSS End*/
+
+
+/* ============================================================================ */
+
+/* News CSS */
+.news{
+    margin-top: 60px;
+}
+
+.news .titlenews{
+    display: flex;
+}
+
+.titlenews{
+    font-size: 35px;
+    padding-left: 70px;
+}
+
+.news .newscontainer{
+    display: flex;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.newscontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.newscontainer img{
+    width: 80px;
+    height: 80px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.newsitem{
+    display: flex;
+    padding-top: 50px;
+}
+
+/* .news2{
+    display: flex;
+    padding-top: 50px;
+}
+
+.news3{
+    display: flex;
+    padding-top: 50px;
+} */
+.mainarticle{
+    padding: 50px 70px 50px 70px;
+}
+
+.mainarticle ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-template-rows: 1fr 1fr ; /* Two rows with equal height */
+    gap: 10px; /* Gap between grid items */
+    margin-top: 30px;
+}
+  
+
+  
+/* BIG ARTICLE START */
+
+.bigarticle {
+grid-row: 1 / span 3; /* Span columns 1 and 3 */
+position: relative;
+}
+
+.bigarticle img{
+    width: 550px;
+    height: 550px;
+    border-radius: 30px;
+}
+
+.bigarticlecontaint{
+    position: absolute;
+    top: 75%;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 25px;
+} 
+
+.bigarticlecontaint h3{
+    padding-bottom: 10px;
+}
+
+.bigarticlecontaint p{
+    padding-bottom: 20px;
+}
+
+.bigarticlecomp ul{
+    justify-content: left;
+}
+
+.bigarticlecomp img{
+    width: 20px;
+    height: 20px;
+    padding: 0px 20px 0px 20px;
+    
+}
+
+/* BIG ARTICLE END */
+
+/* SUB ARTICLE START */
+
+.subarticle{
+    padding: 0px;
+    display: flex;
+}
+
+.subarticle img{
+    width: 150px;
+    height: 150px;
+}
+
+.subarticle .articlecontaint{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.articlecomp img{
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+}
+
+.articlecomp ul{
+    justify-content: left;
+    padding-bottom: 10px;
+}
+
+.articlecomp ul li{
+    padding: 0px 10px 0px 10px;
+}
+
+
+/* Submit Article Start */
+
+.submitarticle-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 0px 70px 70px 70px;
+    gap: 25px;
+    width: 1000px;
+    align-items: center;
+}
+
+.submitarticletitle h3{
+    font-size: 30px;
+    padding: 0px 70px 30px 70px;
+}
+
+.submitarticleitem img{
+    width: 550px;
+    height: 300px;
+    justify-content: right;
+    border-radius: 30px;
+}
+
+.submitarticleitem:nth-child(odd) {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right for odd-indexed items */
+}
+
+.submitarticleitem:nth-child(even) {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left for even-indexed items */
+}
+
+.articleinfotitle{
+    padding-top: 20px ;
+}
+
+.articleinfotitle img{
+    width: 15px;
+    height: 15px;
+    border-radius: 0%;
+    padding-right: 10px;
+}
+
+.articleinfotitle ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.articleinfotitle ul li{
+    padding: 20px 20px 20px 20px;
+}
+
+/* Footer Page ================================================================ */
+.footertext{
+    background-color: #EDECFF;
+}
+
+.footertext h3{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.footertext a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    transition: font-size 0.2s ease;
+}
+
+.footertext a:hover{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    font-size: 31px;
+}
+
+.footernav{
+    display: flex;
+    align-items: center;
+    width: 1200px;
+}
+
+.copyright{
+    flex: 1;
+}
+
+.copyright p{
+    align-items: center;
+    padding-left: 10px;
+}
+
+.footernav .mainmenu{
+    flex: 2;
+    justify-content: flex-end;
+}
